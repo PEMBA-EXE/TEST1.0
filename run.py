@@ -5,8 +5,9 @@ import subprocess
 
 arc = None
 
-print(f' •\x1b[38;5;196m ->\x1b[37m CHECKING FOR UPDATES ')
-os.system('git pull --quiet')
+# Removed the update check
+# print(f' •\x1b[38;5;196m ->\x1b[37m CHECKING FOR UPDATES ')
+# os.system('git pull --quiet')
 
 def main():
     global arc
@@ -22,7 +23,6 @@ def main():
     else:
         arc = "INVALID"
         exit("•\x1b[38;5;196m ->\x1b[37m UNKNOWN DEVICE TYPE")
-
 
 if __name__ == "__main__":
     main()
